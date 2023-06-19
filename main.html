@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<title>application</title>
+</head>
+<body onload="digi()">
+<header>
+	<div id="logo">
+		<img src="images/logo.png">
+		<p>Space App</p>
+	</div>
+	<div class="calendar">
+		<div id="time"></div>
+		<div id="date" style="font-size: small ;color: rgb(94, 94, 94);"></div>
+		</div>
+</header>
+<div id="menu">
+<nav>
+	<ul>
+		<li><a href="#" class="actif"><img src="images/icone/saturna.png" >Planetes<a></li>
+		<li><a href="#"><img src="images/icone/shuttle.png" >Navettes<a></li>
+		<li><a href="#"><img src="images/icone/asteroid.png">Asteroides<a></li>
+	</ul>
+</nav>
+</div><br>
+<div class="left-box">
+	<div class="info">
+		<h2><img src="images/icone/file.png"><i>Caractéristiques </i></h2>
+	</div>
+	<div class="left-box-bottom">
+	
+	<br>
+	<table>
+		<tr >
+		  <td style="color: rgb(102, 102, 102); padding-bottom: 10px;">Rayon équatorial</td>
+		  <td style="text-align:end;padding-bottom: 10px;">6 378,137 km</td>
+		</tr>
+		<tr >
+			<td style="color: rgb(102, 102, 102); padding-bottom: 10px;">Rayon polaire</td>
+			<td style="text-align:end;padding-bottom: 10px;">6 356,752 km</td>
+		  </tr>
+		  <tr >
+			<td style="color: rgb(102, 102, 102); padding-bottom: 10px;">Périmètre équatorial</td>
+			<td style="text-align:end;padding-bottom: 10px;">40 075,017 km</td>
+		  </tr>
+		  <tr >
+			<td style="color: rgb(102, 102, 102); padding-bottom: 10px;">Superficie</td>
+			<td style="text-align:end;padding-bottom: 10px;">510 067 420 km2</td>
+		  </tr>
+		  <tr >
+			<td style="color: rgb(102, 102, 102); padding-bottom: 10px;">Volume</td>
+			<td style="text-align:end;padding-bottom: 10px;">1,083 21 × 10<sup>12</sup> km<sup>3</sup>
+			</td>
+		  </tr>
+		  <tr >
+			<td style="color: rgb(102, 102, 102); padding-bottom: 10px;">Masse</td>
+			<td style="text-align:end;padding-bottom: 10px;">5,973 6 × 10<sup>24</sup> kg
+			</td>
+		  </tr>
+		  <tr >
+		  <td style="color: rgb(102, 102, 102); padding-bottom: 10px;">Gravité de surface	</td>
+		  <td style="text-align:end;padding-bottom: 10px;">9,806 65 m/s<sub>2</sub>(1 g)</td>
+		</tr>
+		<tr >
+			<td style="color: rgb(102, 102, 102); padding-bottom: 10px;">Satellites connus	</td>
+			<td style="text-align:end;padding-bottom: 10px;">1, la lune</td>
+		  </tr>
+		  <tr >
+			<td style="color: rgb(102, 102, 102); padding-bottom: 10px;">Température de surface</td>
+			<td style="text-align:end;padding-bottom: 10px;">Max: 56,7°C; Moy: 15°C; Min: -93.2°C</td>
+		  </tr>
+		  <tr style="text-align:center; padding: 10px;font-weight: bold; font-size: 27px;"><td colspan="2">Atmosphère</td>
+		</tr>
+		  <tr >
+			<td style="color: rgb(102, 102, 102); padding-bottom: 10px;">Pression atmosphérique</td>
+			<td style="text-align:end;padding-bottom: 10px;">101 325 Pa</td>
+		  </tr>
+		  <tr >
+			<td style="color: rgb(102, 102, 102); padding-bottom: 10px;">Masse volumique au sol</td>
+			<td style="text-align:end;padding-bottom: 10px;">1,217 kg/m<sub>3</sub></td>
+		  </tr>
+		  <tr >
+			<td style="color: rgb(102, 102, 102); padding-bottom: 10px;">texte</td>
+			<td style="text-align:end;padding-bottom: 10px;">texte</td>
+		  </tr>
+		  <tr >
+			<td style="color: rgb(102, 102, 102); padding-bottom: 10px;">texte</td>
+			<td style="text-align:end;padding-bottom: 10px;">texte</td>
+		  </tr>
+	  </table>
+</div>
+</div>
+<div class="center-box">
+	<h2 style="letter-spacing: 4px;">Terre|earth</h2>
+	<!-- Import the component -->
+	<script type="module" src="Javascript/model.viewer.min.js"></script>
+<model-viewer id="mv-demo" shadow-intensity="1" src="assets/earth.glb"
+alt="A 3D model of an astronaut" auto-rotate camera-controls interaction-prompt="auto" ar magic-leap></model-viewer>
+</div>
+<div class="right-box">
+	<div class="info2"><img src="images/icone/info.png"><h2>Details additionels</h2></div>
+<div class="right-box-bottom">
+	<p>La Terre est la <i>troisième planète</i> par ordre d'éloignement au Soleil et la cinquième plus grande du Système 
+		solaire aussi bien par la masse que par le diamètre.<br> Par ailleurs, elle est le seul objet céleste connu pour abriter la vie.<br><br> 
+		Elle orbite autour du Soleil en 365,256 jours solaires, une année sidérale, et réalise une rotation sur elle-même relativement 
+		au Soleil en un jour sidéral (environ 23 h 56 min 4 s), soit un peu moins que son jour solaire de 24 h du fait de ce déplacement autour du Soleil.<br> 
+		<br>L'axe de rotation de la Terre possède une inclinaison de 23°, ce qui cause l'apparition des saisons.</p><p>
+			La Terre est la planète la plus dense du Système solaire ainsi que la plus grande et massive des quatre planètes telluriques. 
+			Son enveloppe rigide — appelée la lithosphère —
+			est divisée en différentes plaques tectoniques qui migrent de quelques centimètres par an.
+			<br><br>Environ 71 % de la surface de la planète est couverte d'eau, notamment des océans, mais aussi des lacs et rivières, constituant l'hydrosphère, et les 29 % restants
+			sont des continents et des îles. La majeure partie des régions polaires est couverte de glace, notamment avec l'inlandsis de l'Antarctique et la banquise de l'océan Arctique.
+		</p>
+</div>
+</div>
+<div class="final-box">
+	<div class="titre"><img src="images/galaxy.png"><p> <strong>Planetes & Systemes</strong>  <br><i> Planetes et systemes du systeme solaire</i></p><br></div>
+<div class="final-box-bottom">
+	<ul>
+		<li><a href="">Systeme solaire</a></li><br>
+		<li><a href="">Soleil</a></li><br>
+		<li><a href="">Mercure</a></li><br>
+		<li><a href="">Venus</a></li><br>
+		<li><a href="" class="actif">Terre</a></li><br>
+		<li><a href="">Lune</a></li><br>
+		<li><a href="">Mars</a></li><br>
+		<li><a href="">Jupiter</a></li><br>
+		<li><a href="">Saturne</a></li><br>
+		<li><a href="">Uranus</a></li><br>
+		<li><a href="">Neptune</a></li><br>
+		<li><a href="">Voie Lactée</a></li>
+	</ul>
+</div>
+</div>
+<div class="quiz-container" id="quiz">
+	<div class="title">
+		<img src="images/icone/question.png"><h2>&nbsp DynaQuiz &nbsp&lt;/&gt;</h2>
+	</div>
+	<div id="ask"><p style="font-size: 25px; text-align: center;">Pour demarrer le quiz cliquez sur le boutton ci-dessous<br><br><button id="togg2" style="display:block;">Commencer</button></p>
+	</div>
+	<div id="quizheader">
+	<h2 id="question">ma question</h2>
+	<ul>
+		<li>
+		<input type="radio" name="answer" id="a" class="answer">
+		<label for="a" id="a_text">Answer answer</label>
+		</li>
+
+		<li>
+		<input type="radio" name="answer" id="b" class="answer">
+		<label for="b" id="b_text">Answer</label>
+		</li>
+
+		<li>
+			<input type="radio" name="answer" id="c" class="answer">
+			<label for="c" id="c_text">Answer</label>
+		</li>
+
+		<li>
+			<input type="radio" name="answer" id="d" class="answer">
+			<label for="d" id="d_text">Answer</label>
+		</li>
+	</ul>
+	<button id="submit">Confirmer</button>
+	</div>
+</div>
+<script type="text/javascript">
+function digi() {
+  var date = new Date(),
+      hour = date.getHours(),
+      minute = checkTime(date.getMinutes()),
+      ss = checkTime(date.getSeconds());
+
+  function checkTime(i) {
+    if( i < 10 ) {
+      i = "0" + i;
+    }
+    return i;
+  }
+
+if ( hour > 12 ) {
+  hour = hour - 12;
+  if ( hour == 12 ) {
+    hour = checkTime(hour);
+  document.getElementById("time").innerHTML = hour+":"+minute+":"+ss+" AM";
+  }
+  else {
+    hour = checkTime(hour);
+    document.getElementById("time").innerHTML = hour+":"+minute+":"+ss+" PM";
+  }
+}
+else {
+  document.getElementById("time").innerHTML = hour+":"+minute+":"+ss+" AM";;
+}
+var time = setTimeout(digi,1000);
+}
+let date1 = new Date();
+
+let dateLocale = date1.toLocaleString('fr-FR',{
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',});
+
+document.getElementById('date').innerHTML = dateLocale;
+
+let togg2 = document.getElementById("togg2");
+let d2 = document.getElementById("quizheader");
+togg2.addEventListener("click", () => {
+  if(getComputedStyle(d1).display != "none"){
+    d2.style.display = "none";
+  } else {
+    d2.style.display = "block";
+  }
+})
+
+function togg(){
+  if(getComputedStyle(d2).display != "none"){
+    d2.style.display = "none";
+  } else {
+    d2.style.display = "block";
+  }
+};
+togg2.onclick = togg;
+</script>
+</body>
+</html>
